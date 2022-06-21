@@ -1,0 +1,28 @@
+.block{
+   opacity: 1;
+}
+.none{
+   opacity: 0;
+}
+.reveal {
+   position: relative;
+   animation: showLeft 1s;
+   }
+   
+   @keyframes showLeft {
+   from {left:-100%;}
+   to {left:0;}
+   }
+   .element-animation {
+      margin: 2rem 0;
+      
+      /* Скроем элемент в начальном состоянии */
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    
+    .element-animation.element-show {
+      opacity: 1;
+      transition: all 1.5s;
+      transform: translateX(0px);
+    }
